@@ -1,0 +1,202 @@
+.wrapper {
+  width: 100%;
+}
+
+.wrapper img {
+  object-fit: cover;
+}
+
+.inner {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.title-name {
+  font-size: 1.75rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+.title-content {
+  width: 42%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.title button {
+  text-transform: uppercase;
+  padding: 0.75rem;
+  margin: 0 auto 2%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  width: 75%;
+}
+
+.video1 {
+  bottom: -18%;
+  width: 15%;
+  position: absolute;
+  left: 16%;
+  z-index: -1;
+}
+
+.video2 {
+  width: 4%;
+  position: absolute;
+  right: 30%;
+  bottom: 8%;
+}
+
+.video3 {
+  width: 6%;
+  position: absolute;
+  left: 11%;
+  bottom: -8%;
+  z-index: -2;
+}
+
+.video4 {
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  left: -15%;
+}
+
+.video5 {
+  width: 6%;
+  position: absolute;
+  top: -9%;
+  left: 11%;
+  z-index: -1;
+}
+
+.video6 {
+  width: 5%;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  z-index: -1;
+}
+
+.video7 {
+  width: 6%;
+  position: absolute;
+  top: 0%;
+  right: 6%;
+  z-index: -2;
+}
+
+.video8 {
+  position: absolute;
+  width: 26%;
+  bottom: -4%;
+  right: -9%;
+  z-index: -1;
+}
+
+.video9 {
+  width: 13%;
+  position: absolute;
+  top: 50%;
+  right: -6%;
+  z-index: -2;
+}
+
+@media (min-width: 741px) and (max-width: 1024px) {
+  .video1 {
+    left: 14%;
+    bottom: -15%;
+  }
+
+  .video3 {
+    left: 9%;
+    bottom: -7%;
+  }
+
+  .video4 {
+    top: 25%;
+  }
+
+  .video5 {
+    top: -7%;
+  }
+
+  .video9 {
+    top: 62%;
+  }
+}
+
+@media (max-width: 740px) {
+  .title {
+    gap: 0.5rem;
+  }
+  .title-name {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .title-content {
+    width: 80%;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .title button {
+    padding: 2px;
+    margin: 5% auto;
+  }
+
+  .video1 {
+    left: 14%;
+    bottom: -13%;
+  }
+
+  .video2 {
+    width: 5%;
+    right: 30%;
+    bottom: -8%;
+  }
+
+  .video3 {
+    left: 9%;
+    bottom: -6%;
+  }
+
+  .video4 {
+    top: 36%;
+  }
+
+  .video5 {
+    top: -6%;
+  }
+
+  .video9 {
+    top: 67%;
+  }
+}

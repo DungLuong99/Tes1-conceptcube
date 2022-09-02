@@ -1,0 +1,219 @@
+$wrapper-cl: #fccb05;
+$title-fs: 2rem;
+$title-fw: bold;
+$title-ls: 4.5px;
+$title-lh: 1.33rem;
+$title-button-fs: 1rem;
+$title-button-bg: #fccb05;
+$brand-a-border: 3px solid #111111;
+$brand-a-bg: #ff5500;
+$brand-a-fw: 800;
+$brand-a-fs: 2rem;
+$brand-a-lh: 2.125rem;
+$brand-bg: #111111;
+$brand-lh: 1.67;
+$brand-fw: 800;
+$brand-cl: #fff;
+
+$title-fw-m: bold;
+$title-fs-m: 1.5rem;
+$title-lh-m: 1.33rem;
+$title-ls-m: 1px;
+$title-content-fs-m: 0.5rem;
+$title-content-lh-m: 0.75rem;
+$brand-fs-m: 0.75rem;
+
+.wrapper {
+  width: 100%;
+  background-color: $wrapper-cl;
+}
+
+.inner {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.title-name {
+  max-width: 50%;
+  font-size: $title-fs;
+  line-height: $title-lh;
+  font-weight: $title-fw;
+  letter-spacing: $title-ls;
+}
+
+.title-content {
+  text-align: center;
+  margin: 0 auto;
+  width: 53%;
+}
+
+.title-button button {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 50% auto;
+  font-size: $title-button-fs;
+  background-color: $title-button-bg;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.brand-a {
+  width: 20%;
+  border: $brand-a-border;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $brand-a-bg;
+  position: relative;
+}
+
+.brand-a p {
+  text-align: center;
+  width: 80%;
+  font-weight: $brand-a-fw;
+  text-transform: uppercase;
+  font-size: $brand-a-fs;
+  line-height: $brand-a-lh;
+}
+
+.brand-a img {
+  width: 36%;
+}
+
+.brand-b,
+.brand-c,
+.brand-d,
+.brand-e {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $brand-bg;
+  position: relative;
+}
+.brand-d {
+  background-color: $brand-a-bg;
+}
+.brand-b p,
+.brand-c p,
+.brand-d p,
+.brand-e p {
+  line-height: $brand-lh;
+  align-items: center;
+  font-weight: $brand-fw;
+  display: flex;
+  height: 75%;
+  text-transform: uppercase;
+  color: $brand-cl;
+  text-align: center;
+}
+
+.brand-b img,
+.brand-c img,
+.brand-d img,
+.brand-e img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.icon2 {
+  position: absolute;
+  bottom: -9%;
+  right: -7%;
+  z-index: 6;
+}
+
+.brand-b .icon4 {
+  width: 28%;
+  position: absolute;
+  left: 11%;
+  top: -8%;
+}
+
+.brand-e .icon5 {
+  width: 34%;
+  position: absolute;
+  left: -28%;
+  bottom: -14%;
+}
+
+.icon3 {
+  width: 5%;
+  position: absolute;
+  top: -50px;
+  right: 0%;
+}
+
+.icon1 {
+  position: absolute;
+  top: 6%;
+  right: 0%;
+  width: 5%;
+}
+
+@media (min-width: 741px) and (max-width: 1024px) {
+  .title-name {
+    max-width: 60%;
+  }
+
+  .icon3 {
+    top: -4%;
+  }
+}
+
+@media (max-width: 740px) {
+  .title-name {
+    max-width: 75%;
+    line-height: $title-lh-m;
+    font-weight: $title-fw-m;
+    letter-spacing: $title-ls-m;
+    font-size: $title-fs-m;
+  }
+
+  .title-content {
+    width: 80%;
+    font-size: $title-content-fs-m;
+    line-height: $title-content-lh-m;
+  }
+
+  .title-button button {
+    margin: 10% auto;
+    font-size: $brand-fs-m;
+  }
+
+  .brand-a p {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .brand-b p,
+  .brand-c p,
+  .brand-d p,
+  .brand-e p {
+    font-size: $brand-fs-m;
+  }
+
+  .icon3 {
+    top: -2%;
+    right: 0%;
+  }
+}

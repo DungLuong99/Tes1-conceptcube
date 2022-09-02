@@ -1,0 +1,250 @@
+$title-fs: 45px;
+$title-fw: bold;
+$title-ls: 4.5px;
+$title-content-fw: 300;
+$title-content-fs: 16px;
+$title-content-lh: 1.88rem;
+$title-content-ls: normal;
+$title-content-ff: NotoSansCJKkr;
+$window-content-title-fs: 1rem;
+$window-content-title-fw: 800;
+$detail-fw: 300;
+$detail-fs: 0.75rem;
+$detail-lh: 1rem;
+
+$title-fs-m: 1.75rem;
+$title-ls-m: 1px;
+$title-content-fs-m: 0.5rem;
+$title-content-lh-m: 1.5;
+
+.wrapper {
+  width: 100%;
+  background-color: #0565bb;
+}
+
+.wrapper img {
+  object-fit: contain;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $title-fs;
+  font-weight: $title-fw;
+  letter-spacing: $title-ls;
+}
+
+.title-content {
+  width: 54%;
+  margin: 1rem auto;
+  font-family: $title-content-ff;
+  font-size: $title-content-fs;
+  font-weight: $title-content-fw;
+  line-height: $title-content-lh;
+  letter-spacing: $title-content-ls;
+  text-align: center;
+}
+
+.window {
+  display: flex;
+  position: relative;
+}
+
+.window img {
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.window-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  gap: 1rem;
+  right: 19%;
+  top: 22%;
+}
+
+.window-content-title {
+  text-transform: uppercase;
+  font-weight: $window-content-title-fw;
+  font-size: $window-content-title-fs;
+}
+
+.window-content-detail {
+  font-weight: $detail-fw;
+  font-size: $detail-fs;
+  line-height: $detail-lh;
+}
+
+.window button {
+  width: 30%;
+  padding: 0.25rem;
+}
+.object1 {
+  width: 10%;
+  position: absolute;
+  top: 11%;
+  left: 11%;
+}
+
+.object2 {
+  width: 6%;
+  position: absolute;
+  right: 16%;
+  top: -3%;
+}
+
+.object3 {
+  position: absolute;
+  top: -2%;
+  right: 11%;
+  width: 8%;
+}
+
+.object4 {
+  width: 15%;
+  position: absolute;
+  top: 10%;
+  right: -3%;
+}
+
+.object5 {
+  position: absolute;
+  top: 62%;
+  right: 1%;
+  width: 20%;
+}
+
+.object6 {
+  width: 11%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+}
+
+.object7 {
+  width: 10%;
+  position: absolute;
+  top: 58%;
+  left: 11%;
+}
+
+@media (max-width: 740px) {
+  .inner {
+    margin: 5% auto;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+
+  .title-content {
+    margin: 0 auto;
+    font-size: $title-content-fs-m;
+    line-height: $title-content-lh-m;
+  }
+
+  .window-content {
+    width: 50%;
+    align-items: center;
+    right: 3%;
+    top: 10%;
+  }
+
+  .window-content-title {
+    font-size: 0.5rem;
+  }
+
+  .window-content-detail {
+    display: none;
+  }
+
+  .window img {
+    width: 90%;
+  }
+  .window-button {
+    width: 60%;
+  }
+  .window-button button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .window img {
+    width: 80%;
+  }
+
+  .window-content {
+    width: 38%;
+    right: 11%;
+    top: 12%;
+  }
+
+  .window-content button {
+    margin: 0;
+  }
+
+  .object4 {
+    top: 47%;
+  }
+
+  .object5 {
+    top: 78%;
+    right: -8%;
+  }
+
+  .object6 {
+    top: 67%;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 1024px) {
+  .window img {
+    width: 90%;
+  }
+
+  .window-content {
+    width: 42%;
+    right: 6%;
+  }
+
+  .window-content button {
+    padding: 0;
+  }
+
+  .object4 {
+    top: 51%;
+    right: -10%;
+  }
+
+  .object5 {
+    top: 81%;
+    right: -11%;
+    width: 17%;
+  }
+
+  .object6 {
+    top: 68%;
+  }
+}

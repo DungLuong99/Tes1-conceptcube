@@ -1,0 +1,20 @@
+$wrapper-bg: #fff;
+$wrapper-border: solid 3px #020001;
+$name-fw: 800;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+  border: $wrapper-border;
+  background-color: $wrapper-bg;
+  cursor: pointer;
+}
+
+.name {
+  display: flex;
+  font-weight: $name-fw;
+  justify-content: center;
+  width: 100%;
+}
